@@ -23,3 +23,20 @@
 
 - `index.html` … ページ本体（1ファイル完結）
 - `images/` … 各施設・各社の公式サイトの写真（表示サイズに合わせて圧縮）
+
+## 写真クレジット（Wikimedia Commons・CCライセンス分）
+
+| 使用箇所 | ファイル | 撮影者 | ライセンス |
+|---|---|---|---|
+| セイコーマート | セイコーマート 店舗例 いしづか.jpg | Kkdbill301 | CC BY-SA 4.0 |
+| 空港で食べてから移動 | 北海道ラーメン道場 (3207077830).jpg | MiNe | CC BY 2.0 |
+| 空港で食べてから移動 | Gourmet World (New Chitose Airport).JPG | Abasaa | Public domain |
+| びっくりドンキー | ガリバーバーグディッシュ（中葛西店）.jpg | くろふね | CC BY 4.0 |
+| びっくりドンキー | フォンデュ風チーズバーグディッシュ（南行徳店）.jpg | くろふね | CC BY-SA 4.0 |
+| 蜂屋 | Hachiya gojo Founded shop.JPG | カイロス | Public domain |
+| 蜂屋 | Hachiya-Asahikawa-Honten01.JPG | レジリデンス (RJD) | CC BY 3.0 |
+| あさひかわラーメン村 | Asahikawara-menmura.jpg | Hykw-a4 | CC BY-SA 3.0 |
+| 雪印パーラー | 雪印パーラーのソフトクリーム1.jpg | ノボホショコロトソ | CC BY 4.0 |
+| 雪印パーラー | SnowRoyal Icecream.jpg | Endou subaru | CC BY-SA 4.0 |
+
+※びっくりドンキーの料理写真は他店舗で撮影されたチェーン共通メニューです。
