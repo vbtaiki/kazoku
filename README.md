@@ -39,4 +39,6 @@
 | 雪印パーラー | 雪印パーラーのソフトクリーム1.jpg | ノボホショコロトソ | CC BY 4.0 |
 | 雪印パーラー | SnowRoyal Icecream.jpg | Endou subaru | CC BY-SA 4.0 |
 
+| かばと製麺所 | 蝦夷前うどん かばと製麺所 - Panoramio 78358693.jpg | Panoramio投稿者 | CC BY-SA 3.0 |
+
 ※びっくりドンキーの料理写真は他店舗で撮影されたチェーン共通メニューです。
