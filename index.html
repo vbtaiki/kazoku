@@ -4,6 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>北海道家族旅行のしおり｜2026.8.16–20</title>
+<meta name="description" content="4泊5日・6人の北海道家族旅行のしおり。日程表・こどもページ・ごはんの候補・持ち物リスト・連絡先。">
+<meta name="theme-color" content="#2f7d5c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="北海道家族旅行のしおり｜2026.8.16–20">
+<meta property="og:description" content="日程表・こどもページ・ごはんの候補・持ち物リストをまとめた、家族みんなのしおり。">
+<meta property="og:image" content="https://vbtaiki.github.io/kazoku/images/ogp.jpg">
+<meta property="og:url" content="https://vbtaiki.github.io/kazoku/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐧</text></svg>">
+</head>
+<body>
+<title>北海道家族旅行のしおり｜2026.8.16–20</title>
 <style>
   :root{
     --green:#2f7d5c; --green-dark:#1e5a40; --green-pale:#e8f3ee;
@@ -92,14 +104,15 @@
   .kc{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 3px 10px rgba(0,0,0,.08);}
   .kc .kph{height:160px;background:linear-gradient(135deg,#fdf3d8,#fde3ec);}
   .kc .kph img{width:100%;height:100%;object-fit:cover;display:block;}
+  .kc .kph.g4{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:2px;height:214px;background:#fff;}
+  a.kc{display:block;text-decoration:none;color:inherit;transition:transform .15s;}
+  a.kc:hover{transform:translateY(-3px);}
+  .kc .lk{font-size:10.5px;color:#5b8bd0;margin-top:5px;font-weight:700;}
   .kc .kph .fb{display:flex;align-items:center;justify-content:center;height:100%;font-size:64px;}
   .kc .kbd{padding:12px 15px 14px;text-align:center;}
   .kc h4{font-size:16.5px;color:#3f3a5a;}
   .kc p{font-size:13px;color:#6b6480;line-height:1.8;margin-top:4px;}
   .kc .ad{font-size:11px;color:#9a94ab;margin-top:6px;border-top:1px dashed #e8e2f0;padding-top:6px;}
-  a.kc{display:block;text-decoration:none;color:inherit;transition:transform .15s;}
-  a.kc:hover{transform:translateY(-2px);}
-  .kc .lk{font-size:10.5px;color:#5b8bd0;margin-top:4px;}
 
   /* チェックイン */
   .ck{background:#fff;border:2px solid var(--green);border-radius:14px;padding:18px;margin:14px 0;}
@@ -129,10 +142,23 @@
   .checklist li.done{color:#aaa;text-decoration:line-through;}
   .checklist li.done::before{content:"☑";color:#aaa;}
 
+  .countdown{background:linear-gradient(135deg,#fff6df,#ffe9f0 55%,#e6f3ff);border-radius:18px;padding:18px 20px;margin:18px 0 6px;text-align:center;box-shadow:0 3px 10px rgba(0,0,0,.06);}
+  .countdown .cd-n{font-size:44px;font-weight:800;color:#e0708c;line-height:1.1;letter-spacing:-.02em;}
+  .countdown .cd-l{font-size:14px;font-weight:700;color:#5b8bd0;}
+  .countdown .cd-s{font-size:12.5px;color:var(--sub);margin-top:4px;}
+  .todo{background:#fff;border:2px solid var(--warn-bd);border-radius:14px;padding:16px 18px;margin:14px 0;}
+  .todo h3{font-size:15px;color:var(--warn-ink);margin-bottom:4px;}
+  .todo .th{font-size:12.5px;color:var(--sub);margin-bottom:8px;}
+  .todo .checklist li{font-size:13.5px;line-height:1.6;}
+  .todo .checklist li::before{color:var(--warn-bd);}
+  .meal-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-bottom:6px;}
+  .mc{background:#fff;border:1px solid var(--line);border-radius:14px;padding:13px 15px;display:flex;gap:12px;box-shadow:0 2px 6px rgba(0,0,0,.05);}
+  .mc .em{font-size:32px;line-height:1.2;flex-shrink:0;}
+  .mc h4{font-size:14.5px;color:var(--green-dark);}
+  .mc p{font-size:12.5px;color:var(--sub);margin-top:3px;line-height:1.65;}
+  .mc .mf{margin-top:6px;font-size:12px;}
   footer{margin-top:40px;text-align:center;font-size:11.5px;color:var(--sub);line-height:1.8;}
 </style>
-</head>
-<body>
 
 <header class="hero">
   <div class="kicker">FAMILY TRIP TO HOKKAIDO</div>
@@ -145,7 +171,7 @@
   <li><button data-v="home" class="on">🏠 ホーム</button></li>
   <li><button data-v="days">📅 日程</button></li>
   <li><button data-v="kids">👧 こども</button></li>
-  <li><button data-v="gohan">🍽 ごはん</button></li>
+  <li><button data-v="food">🍽 ごはん</button></li>
   <li><button data-v="items">🎒 持ち物・連絡先</button></li>
 </ul></nav>
 
@@ -153,44 +179,63 @@
 
 <!-- ================= HOME ================= -->
 <section id="v-home" class="view on">
-  
-    
+  <div class="countdown">
+    <div class="cd-n" id="cd-num">…</div>
+    <div class="cd-l" id="cd-label">ほっかいどうまで</div>
+    <div class="cd-s">2026年8月16日（日）17:05 セントレア発 ✈️</div>
+  </div>
+
   <h2 class="section-title">5日間のながれ</h2>
   <div class="daycards">
     <div class="dc" onclick="goDay('day1')">
-      <div class="ph"><img src="https://www.skymark.co.jp/ja/service/images/seatmap_img_01.jpg" alt="スカイマークの機体" onerror="fb(this,'🛫')"><span class="dt">8/16（日）</span></div>
+      <div class="ph"><img src="images/sky_ground.jpg" loading="lazy" decoding="async" alt="スカイマークの飛行機" onerror="fb(this,'🛫')"><span class="dt">8/16（日）</span></div>
       <div class="bd"><h3>DAY1｜北海道へ</h3><p>17:05 セントレア発 → 夜は千歳の「おうちホテル」泊</p></div>
     </div>
     <div class="dc" onclick="goDay('day2')">
-      <div class="ph"><img src="https://www.royce.com/cct/assets/images/top/faci_sld01_1.jpg" alt="ロイズカカオ&チョコレートタウン" onerror="fb(this,'🍫')"><span class="dt">8/17（月）</span></div>
-      <div class="bd"><h3>DAY2｜チョコと香りとアイヌ文化</h3><p>ロイズ → SHIRO工場 → アイヌ記念館 → 旭川でカニ！</p></div>
+      <div class="ph"><img src="images/royce_town.jpg" loading="lazy" decoding="async" alt="ロイズカカオ&チョコレートタウン" onerror="fb(this,'🍫')"><span class="dt">8/17（月）</span></div>
+      <div class="bd"><h3>DAY2｜チョコと香りとアイヌ文化</h3><p>ロイズ → SHIRO工場 → アイヌ記念館 → 夜は旭川グルメ</p></div>
     </div>
     <div class="dc" onclick="goDay('day3')">
-      <div class="ph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Walking_Penguins_in_Asahiyama_Zoo_(back).JPG?width=640" alt="旭山動物園ペンギンの散歩" onerror="fb(this,'🐧')"><span class="dt">8/18（火）</span></div>
+      <div class="ph"><img src="images/zoo_penguin.jpg" loading="lazy" decoding="async" alt="旭山動物園 ぺんぎん館の水中トンネル" onerror="fb(this,'🐧')"><span class="dt">8/18（火）</span></div>
       <div class="bd"><h3>DAY3｜東川さんぽ＆旭山動物園</h3><p>写真の町・東川 → ママお見送り → ペンギンに会いに！</p></div>
     </div>
     <div class="dc" onclick="goDay('day4')">
-      <div class="ph"><img src="https://www.hokkaido-airports.com/ja/new-chitose/assets/pages/top/images/mv-welcome-bg-small.jpg" alt="新千歳空港" onerror="fb(this,'🐟')"><span class="dt">8/19（水）</span></div>
+      <div class="ph"><img src="images/aq_window.jpg" loading="lazy" decoding="async" alt="千歳水族館の水中観察窓" onerror="fb(this,'🐟')"><span class="dt">8/19（水）</span></div>
       <div class="bd"><h3>DAY4｜サケの水族館と空港あそび</h3><p>千歳水族館 → 新千歳空港で飛行機見学＆夕食</p></div>
     </div>
     <div class="dc" onclick="goDay('day5')">
-      <div class="ph"><div class="fb">🏡💕</div><span class="dt">8/20（木）</span></div>
+      <div class="ph"><img src="images/sky_gate.jpg" loading="lazy" decoding="async" alt="スカイマークの飛行機" onerror="fb(this,'🏡')"><span class="dt">8/20（木）</span></div>
       <div class="bd"><h3>DAY5｜おうちへ</h3><p>9:20 新千歳発 → 11:10 セントレア着。おつかれさま！</p></div>
     </div>
+  </div>
+
+  <h2 class="section-title">出発までにやること</h2>
+  <div class="todo">
+    <h3>⚠️ まだ決まっていないこと・予約が必要なこと</h3>
+    <p class="th">タップでチェック（この端末に保存されます）</p>
+    <ul class="checklist">
+      <li>ジャンボタクシーを予約（8/16夜・8/20朝の2回）☎ 千歳交通 0123-23-3121 ／6名＋荷物＋ベビーカー、2歳用チャイルドシートも伝える</li>
+      <li>8/17（月）夜の夕食を決めて予約 →「🍽 ごはん」タブから。天金・大舟は個室が人気なので早めに</li>
+      <li>川村カ子トアイヌ記念館に電話（8月の閉館は17時？18時？）☎ 0166-51-2461 ／ムックリ体験も一緒に予約</li>
+      <li>レンタカーのセルフチェックインを済ませる（8/16までにWebで）</li>
+      <li>OMO7に連絡：8/18は部屋を移るので、荷物のあずかりと「えぞひぐまルーム」への引き継ぎを確認</li>
+    </ul>
+    <p class="th" style="margin:8px 0 0;">✅ 予約ずみ：飛行機（往復）・Minn千歳（2泊）・OMO7旭川（2泊）・レンタカー・ロイズのチケット<br>
+    🎟 当日券でOK：旭山動物園・千歳水族館・SHIROみんなの工場（予約不要）</p>
   </div>
 
   <h2 class="section-title">お泊まりと車</h2>
   <div class="daycards">
     <div class="dc">
-      <div class="ph"><img src="https://cdn.staytuned.asia/large_Minn_Chitose013_room_A301_04634a4315.png" alt="Minn千歳 2LDK" onerror="fb(this,'🏠')"><span class="dt">8/16・8/19泊</span></div>
+      <div class="ph"><img src="images/minn.jpg" loading="lazy" decoding="async" alt="Minn千歳 2LDK" onerror="fb(this,'🏠')"><span class="dt">8/16・8/19泊</span></div>
       <div class="bd"><h3>Minn千歳（2LDK）</h3><p>キッチン＆洗濯機付きのおうち型ホテル。セルフチェックイン</p></div>
     </div>
     <div class="dc">
-      <div class="ph"><img src="https://res.cloudinary.com/hrmedia/image/authenticated/s--X2QrHpbN--/OMO7%E6%97%AD%E5%B7%9D_%E3%81%88%E3%81%9E%E3%81%B2%E3%81%90%E3%81%BE%E3%83%AB%E3%83%BC%E3%83%A0%E7%AA%93%E6%AD%A3%E5%AF%BE_%E6%98%BC_eb5h7z.webp" alt="OMO7旭川 えぞひぐまルーム" onerror="fb(this,'🐻')"><span class="dt">8/17・8/18泊</span></div>
+      <div class="ph"><img src="images/omo7.jpg" loading="lazy" decoding="async" alt="OMO7旭川 えぞひぐまルーム" onerror="fb(this,'🐻')"><span class="dt">8/17・8/18泊</span></div>
       <div class="bd"><h3>OMO7旭川（朝食付き）</h3><p>2日目の夜はパパ＆こたろうが「えぞひぐまルーム」に！</p></div>
     </div>
     <div class="dc">
-      <div class="ph"><div class="fb">🚐</div><span class="dt">8/17〜8/19</span></div>
+      <div class="ph"><img src="images/serena.jpg" loading="lazy" decoding="async" alt="日産セレナ" onerror="fb(this,'🚐')"><span class="dt">8/17〜8/19</span></div>
       <div class="bd"><h3>セレナ（日産レンタカー）</h3><p>チャイルドシート3台無料・ETC付き。8/19は19:00返却</p></div>
     </div>
   </div>
@@ -208,6 +253,7 @@
       <small>18:45 新千歳着（6名）</small>
       <details class="more"><summary>くわしく</summary><div class="mi">券種は変更不可タイプ</div></details>
     </div></li>
+    <li><span class="t">19:00</span><span class="dot"></span><div class="c">🍽 夕食（空港で食べる or お部屋ごはん）<span class="badge tbd">お店えらび中</span><small>候補は「🍽 ごはん」タブへ</small></div></li>
     <li class="move"><span class="t">19:40</span><span class="dot"></span><div class="c">🚕 ジャンボタクシーで Minn千歳へ（約10分）<span class="badge tbd">要予約</span>
       <details class="more"><summary>くわしく</summary><div class="mi">千歳交通 <span class="tel">0123-23-3121</span>／6名＋荷物＋ベビーカー／2歳用チャイルドシート対応を予約時に確認</div></details>
     </div></li>
@@ -241,14 +287,15 @@
       <small>スーペリア2室（父母＋こたろう／おばあちゃん＋ほのか＋ひび）・チェックインは18:00から</small>
       <details class="more"><summary>くわしく</summary><div class="mi">駐車場は提携タイムズ（1,000円/24h・先着）<br>📍 旭川市6条通9丁目 ☎ <span class="tel">050-3134-8095</span> <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=OMO7+Asahikawa" target="_blank">地図</a></div></details>
     </div></li>
-    <li class="spot"><span class="t">19:00</span><span class="dot"></span><div class="c">🦀 居酒屋 天金でカニの夕食 <span class="badge tbd">要予約</span>
-      <small>OMO7から徒歩7〜8分／予約時に毛ガニ確保＋個室を依頼 <span class="tel">0166-22-3953</span></small>
-      <details class="more"><summary>くわしく</summary><div class="mi">掘りごたつ個室あり・子ども用に寿司/白飯/天ぷらも／取れない場合の代替: お座敷居酒屋 大舟・回転寿しトリトン旭神店<br>📍 旭川市4条通7丁目586-1 <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%85%E9%85%92%E5%B1%8B%E5%A4%A9%E9%87%91+%E6%97%AD%E5%B7%9D" target="_blank">地図</a></div></details>
+    <li class="spot"><span class="t">19:00</span><span class="dot"></span><div class="c">🍽 旭川で夕食 <span class="badge tbd">お店えらび中</span>
+      <small>候補は「🍽 ごはん」タブに4つ（カニの天金／海鮮の大舟／回転寿しトリトン／ジンギスカン大黒屋）</small>
+      <details class="more"><summary>くわしく</summary><div class="mi">天金・大舟は個室が人気なので、行くと決めたら早めに電話予約を（天金 <span class="tel">0166-22-3953</span>／大舟 <span class="tel">0166-22-2295</span>）／トリトンは予約不可で夕方は大行列なので17時台に</div></details>
     </div></li>
   </ul>
 
   <h2 class="day" id="day3"><span class="d">8月18日（火）</span><span class="w">DAY 3</span></h2>
   <p class="day-theme">写真の町・東川 → ママをお見送り → 旭山動物園！</p>
+  <div class="warn">⏰ この日はお見送りと動物園が続くので時間がタイト。動物園は最終入園16:00・閉園17:15なので、空港を13:45には出たいところ。（もともとの表では動物園が13:15開始になっていましたが、14:30のお見送りと重なるため後ろにずらしています）</div>
   <ul class="tl">
     <li class="move"><span class="t">8:30</span><span class="dot"></span><div class="c">OMO7出発（東川町へ約30分）<small>⚠️ 部屋1（父母＋こたろうの部屋）は荷物をまとめてチェックアウト→フロントに預けて「えぞひぐまルーム」への引き継ぎを依頼</small></div></li>
     <li class="spot"><span class="t">9:00</span><span class="dot"></span><div class="c">📷 東川町さんぽ <span class="badge ok">予約不要</span>
@@ -256,19 +303,21 @@
       <details class="more"><summary>くわしく</summary><div class="mi">火曜は全施設営業見込み（ギャラリーは月曜休が多い町）<br>📍 せんとぴゅあ: 北町1丁目1-1／道草館: 東町1丁目1-15 <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%9B%E3%82%93%E3%81%A8%E3%81%B4%E3%82%85%E3%81%82+%E6%9D%B1%E5%B7%9D%E7%94%BA" target="_blank">地図</a></div></details>
     </div></li>
     <li class="move"><span class="t">12:15</span><span class="dot"></span><div class="c">旭川空港へ（約15分）・空港で昼食</div></li>
-    <li><span class="t">14:30</span><span class="dot"></span><div class="c">✈️ おかあさん：AIRDO84便で羽田へ <span class="badge ok">本人手配済み</span><small>16:15 羽田着／みんなで「いってらっしゃい！」</small></div></li>
-    <li class="spot"><span class="t">13:15</span><span class="dot"></span><div class="c">🐧 旭山動物園（5名で）<span class="badge ok">当日券OK</span>
-      <small>〜16:30頃／中学生以下無料・大人1,000円／入園したらまず「もぐもぐタイム」の時刻をチェック！</small>
+    <li><span class="t">13:30</span><span class="dot"></span><div class="c">👋 おかあさんをお見送り<small>保安検査場へ。みんなで「いってらっしゃい！」</small></div></li>
+    <li class="move"><span class="t">13:45</span><span class="dot"></span><div class="c">🚗 旭山動物園へ出発（約35分）</div></li>
+    <li><span class="t">14:30</span><span class="dot"></span><div class="c">✈️ おかあさん：AIRDO84便で羽田へ <span class="badge ok">本人手配済み</span><small>16:15 羽田着</small></div></li>
+    <li class="spot"><span class="t">14:20</span><span class="dot"></span><div class="c">🐧 旭山動物園（5名で）<span class="badge ok">当日券OK</span>
+      <small>〜17:00／中学生以下無料・大人1,000円／入園したらまず「もぐもぐタイム」の時刻をチェック！</small>
       <details class="more"><summary>くわしく</summary><div class="mi">夏期開園 9:30〜17:15・最終入園16:00／ベビーカー無料貸出（先着70台）／正門横の無料Pは59台のみ→民間P（500円前後）も視野に<br>📍 旭川市東旭川町倉沼 ☎ <span class="tel">0166-36-1104</span> <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92" target="_blank">地図</a></div></details>
     </div></li>
-    <li class="spot"><span class="t">17:30</span><span class="dot"></span><div class="c">🐻 OMO7へ戻る — 今夜はお部屋チェンジ！<small>パパ＆こたろうは「えぞひぐまルーム」へ（IN15:00〜）／夕食は旭川ラーメンなど気楽に</small></div></li>
+    <li class="spot"><span class="t">17:30</span><span class="dot"></span><div class="c">🐻 OMO7へ戻る — 今夜はお部屋チェンジ！<small>パパ＆こたろうは「えぞひぐまルーム」へ（IN15:00〜）／夕食は旭川ラーメン（候補は「🍽 ごはん」タブ）</small></div></li>
   </ul>
 
   <h2 class="day" id="day4"><span class="d">8月19日（水）</span><span class="w">DAY 4</span></h2>
   <p class="day-theme">千歳へ戻ってサケの水族館 → 空港で飛行機見学＆夕食</p>
   <ul class="tl">
     <li class="move"><span class="t">8:30</span><span class="dot"></span><div class="c">OMO7チェックアウト・道央道で千歳へ（約2.5時間・休憩1回）</div></li>
-    <li class="move"><span class="t">11:45</span><span class="dot"></span><div class="c">道の駅サーモンパーク千歳で昼食（駐車場無料）</div></li>
+    <li class="move"><span class="t">11:45</span><span class="dot"></span><div class="c">道の駅サーモンパーク千歳で昼食（駐車場無料・お店は「🍽 ごはん」タブ）</div></li>
     <li class="spot"><span class="t">12:30</span><span class="dot"></span><div class="c">🐟 サケのふるさと千歳水族館 <span class="badge ok">当日券OK</span>
       <small>〜14:30／大人800円・小学生300円・幼児無料／ドクターフィッシュ体験と水中観察窓</small>
       <details class="more"><summary>くわしく</summary><div class="mi">9:00〜17:00営業／asoview等の割引電子チケットあり<br>📍 千歳市花園2丁目312 ☎ <span class="tel">0123-42-3001</span> <a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%B5%E3%82%B1%E3%81%AE%E3%81%B5%E3%82%8B%E3%81%95%E3%81%A8%E5%8D%83%E6%AD%B3%E6%B0%B4%E6%97%8F%E9%A4%A8" target="_blank">地図</a></div></details>
@@ -277,7 +326,7 @@
     <li class="spot"><span class="t">15:45</span><span class="dot"></span><div class="c">🛫 新千歳空港であそぶ<small>大空ミュージアム（無料）・展望デッキで飛行機見学・おみやげ下見</small>
       <details class="more"><summary>くわしく</summary><div class="mi">※当初予定のドラえもんスカイパークは2025年7月に閉館済み。疲れていたら「新千歳空港温泉」でひとっ風呂もアリ</div></details>
     </div></li>
-    <li><span class="t">18:00</span><span class="dot"></span><div class="c">🍜 空港で夕食（ラーメン道場など）→ 18:40頃 出発</div></li>
+    <li><span class="t">18:00</span><span class="dot"></span><div class="c">🍜 空港で夕食（候補は「🍽 ごはん」タブ）→ 18:40頃 出発</div></li>
     <li class="move"><span class="t">18:50</span><span class="dot"></span><div class="c">🚗 レンタカー返却（19:00まで）→ 徒歩でMinnへ<small>返却前にガソリン満タンを忘れずに</small></div></li>
     <li class="spot"><span class="t">19:15</span><span class="dot"></span><div class="c">🏠 Minn千歳 チェックイン <span class="badge ok">予約済み</span><small>お風呂・最後のお洗濯・荷造り。明日は6:45出発！</small></div></li>
   </ul>
@@ -296,80 +345,131 @@
   <div class="kh">
     <h2>👧👦 ほっかいどう だいぼうけん 👶</h2>
     <p>ほのか・ひび・こたろうの 5にちかん！（おとなも これで ざっくり わかるよ）</p>
-    <p style="font-size:11.5px;color:#9a94ab;margin-top:2px;">しゃしんを タップすると おみせの ページが ひらくよ</p>
+    <p style="font-size:11.5px;color:#9a94ab;margin-top:2px;">カードを タップすると おみせや しせつの ページが ひらくよ 👆</p>
   </div>
 
   <div class="kd">1にちめ（8/16・にちようび）</div>
   <div class="kcards">
-    <a class="kc" href="https://www.skymark.co.jp/" target="_blank"><div class="kph"><img src="https://www.skymark.co.jp/ja/service/images/seatmap_img_01.jpg" alt="スカイマークの飛行機" onerror="fb(this,'🛫')"></div>
-      <div class="kbd"><h4>ひこうきに のるよ！</h4><p>ゆうがたの ひこうきで ほっかいどうへ。まどから くもの うみが みえるかな？</p><div class="ad">17:05 セントレア発 SKY767 → 18:45 新千歳着</div><div class="lk">▶ スカイマークのHP</div></div></a>
-    <a class="kc" href="https://staytuned.asia/ja/brands/minn/hotels/minn-chitose" target="_blank"><div class="kph"><img src="https://cdn.staytuned.asia/large_Minn_Chitose013_room_A301_04634a4315.png" alt="Minn千歳の部屋" onerror="fb(this,'🏠')"></div>
-      <div class="kbd"><h4>おうちみたいな ホテル</h4><p>キッチンも せんたくきも ある ひろい おへやに みんなで おとまり！</p><div class="ad">Minn千歳・スーペリアファミリー2LDK</div><div class="lk">▶ Minn千歳のHP</div></div></a>
+    <a class="kc" href="https://www.skymark.co.jp/" target="_blank" rel="noopener"><div class="kph"><img src="images/sky_ground.jpg" loading="lazy" decoding="async" alt="スカイマークの飛行機と おみおくりの スタッフさん" onerror="fb(this,'🛫')"></div>
+      <div class="kbd"><h4>ひこうきに のるよ！</h4><p>ゆうがたの ひこうきで ほっかいどうへ。まどから くもの うみが みえるかな？</p><div class="ad">17:05 セントレア発 SKY767 → 18:45 新千歳着</div><div class="lk">▶ スカイマークの ページ</div></div></a>
+    <a class="kc" href="https://staytuned.asia/ja/brands/minn/hotels/minn-chitose" target="_blank" rel="noopener"><div class="kph"><img src="images/minn.jpg" loading="lazy" decoding="async" alt="Minn千歳の部屋" onerror="fb(this,'🏠')"></div>
+      <div class="kbd"><h4>おうちみたいな ホテル</h4><p>キッチンも せんたくきも ある ひろい おへやに みんなで おとまり！</p><div class="ad">Minn千歳・スーペリアファミリー2LDK</div><div class="lk">▶ Minn千歳の ページ</div></div></a>
   </div>
 
   <div class="kd">2にちめ（8/17・げつようび）</div>
   <div class="kcards">
-    <a class="kc" href="https://www.royce.com/cct/" target="_blank"><div class="kph"><img src="https://www.royce.com/cct/assets/images/top/faci_sld01_1.jpg" alt="ロイズカカオ&チョコレートタウン" onerror="fb(this,'🍫')"></div>
-      <div class="kbd"><h4>チョコレートの おしろ</h4><p>チョコが できるところを けんがく！じぶんで チョコに トッピングも できるよ。</p><div class="ad">ロイズ カカオ＆チョコレートタウン 10:00〜11:45</div><div class="lk">▶ ロイズタウンのHP</div></div></a>
-    <a class="kc" href="https://factory.shiro-shiro.jp/" target="_blank"><div class="kph"><img src="https://factory.shiro-shiro.jp/wp-content/themes/factory/assets/img/page/facility/kids-space_01.jpg" alt="SHIROみんなの工場キッズスペース" onerror="fb(this,'🫧')"></div>
-      <div class="kbd"><h4>いいにおいの こうじょう</h4><p>てんじょうの あみあみネットで あそべるよ！じぶんだけの いいにおいも つくれるかも。</p><div class="ad">SHIRO みんなの工場 13:15〜15:30</div><div class="lk">▶ みんなの工場のHP</div></div></a>
-    <a class="kc" href="https://www.visit-hokkaido.jp/spot/detail_10229.html" target="_blank"><div class="kph"><img src="https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0229/10229_1_l.jpg" alt="川村カ子トアイヌ記念館" onerror="fb(this,'🪶')"></div>
-      <div class="kbd"><h4>アイヌの おはなし</h4><p>むかしから ほっかいどうに すむ アイヌのひとの くらしと「ムックリ」という がっきに あえるよ。</p><div class="ad">川村カ子トアイヌ記念館 16:30〜</div><div class="lk">▶ 記念館のしょうかいページ</div></div></a>
-    <a class="kc" href="https://r.gnavi.co.jp/7ubcgbet0000/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Erimacrus_isenbeckii.jpg?width=640" alt="毛ガニ" onerror="fb(this,'🦀')"></div>
-      <div class="kbd"><h4>カニさんの ばんごはん</h4><p>よるは おっきな けガニ！おすしや てんぷらも あるから あんしんしてね。</p><div class="ad">居酒屋 天金 19:00〜</div><div class="lk">▶ 天金のページ（ぐるなび）</div></div></a>
+    <a class="kc" href="https://www.royce.com/cct/" target="_blank" rel="noopener"><div class="kph g4"><img src="images/royce_line.jpg" loading="lazy" decoding="async" alt="チョコレートこうじょうの けんがく" onerror="fb(this,'🍫')"><img src="images/royce_cacao.jpg" loading="lazy" decoding="async" alt="ほんものの カカオポッド" onerror="fb(this,'🍫')"><img src="images/royce_topping.jpg" loading="lazy" decoding="async" alt="トッピングたいけん" onerror="fb(this,'🍫')"><img src="images/royce_bar.jpg" loading="lazy" decoding="async" alt="できあがった チョコレート" onerror="fb(this,'🍫')"></div>
+      <div class="kbd"><h4>チョコレートの おしろ</h4><p>チョコが できるところを けんがく！じぶんで チョコに トッピングも できるよ。</p><div class="ad">ロイズ カカオ＆チョコレートタウン 10:00〜11:45</div><div class="lk">▶ ロイズタウンの ページ</div></div></a>
+    <a class="kc" href="https://factory.shiro-shiro.jp/" target="_blank" rel="noopener"><div class="kph g4"><img src="images/shiro_net.jpg" loading="lazy" decoding="async" alt="てんじょうの あみあみネット" onerror="fb(this,'🫧')"><img src="images/shiro_board.jpg" loading="lazy" decoding="async" alt="らくがきできる かべ" onerror="fb(this,'🫧')"><img src="images/shiro_blend.jpg" loading="lazy" decoding="async" alt="いいにおいづくり" onerror="fb(this,'🫧')"><img src="images/shiro_line.jpg" loading="lazy" decoding="async" alt="こうじょうの なか" onerror="fb(this,'🫧')"></div>
+      <div class="kbd"><h4>いいにおいの こうじょう</h4><p>てんじょうの あみあみネットで あそべるよ！じぶんだけの いいにおいも つくれるかも。</p><div class="ad">SHIRO みんなの工場 13:15〜15:30</div><div class="lk">▶ みんなの工場の ページ</div></div></a>
+    <a class="kc" href="https://www.visit-hokkaido.jp/spot/detail_10229.html" target="_blank" rel="noopener"><div class="kph"><img src="images/ainu.jpg" loading="lazy" decoding="async" alt="川村カ子トアイヌ記念館" onerror="fb(this,'🪶')"></div>
+      <div class="kbd"><h4>アイヌの おはなし</h4><p>むかしから ほっかいどうに すむ アイヌのひとの くらしと「ムックリ」という がっきに あえるよ。</p><div class="ad">川村カ子トアイヌ記念館 16:30〜</div><div class="lk">▶ きねんかんの ページ</div></div></a>
+    <div class="kc"><div class="kph"><div class="fb">🦀🍣🍖</div></div>
+      <div class="kbd"><h4>ばんごはんは なにかな？</h4><p>カニさんか おすしか おにくか…！みんなで そうだんして きめよう。</p><div class="ad">よるごはん 19:00ごろ（おみせは そうだんちゅう）</div></div></div>
   </div>
 
   <div class="kd">3にちめ（8/18・かようび）</div>
   <div class="kcards">
-    <a class="kc" href="https://higashikawa-town.jp/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Daisetsuzan-asahidake.jpg?width=640" alt="東川町・旭岳" onerror="fb(this,'📷')"></div>
-      <div class="kbd"><h4>しゃしんの まちを おさんぽ</h4><p>おっきな やま（あさひだけ）の みえる まちで、ほんや ざっかを みたり おやつを たべたり。</p><div class="ad">東川町（せんとぴゅあ・道草館）9:00〜12:00</div><div class="lk">▶ 東川町のHP</div></div></a>
-    <a class="kc" href="https://www.airdo.jp/" target="_blank"><div class="kph"><div class="fb">👋✈️</div></div>
-      <div class="kbd"><h4>ママは ひとあし さきに</h4><p>ひこうきじょうで ママに「いってらっしゃい！」。また 2かごに あえるよ。</p><div class="ad">旭川空港 14:30発（AIRDO84）</div><div class="lk">▶ AIRDOのHP</div></div></a>
-    <a class="kc" href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Walking_Penguins_in_Asahiyama_Zoo_(back).JPG?width=640" alt="旭山動物園のペンギン" onerror="fb(this,'🐧')"></div>
-      <div class="kbd"><h4>あさひやま どうぶつえん！</h4><p>ペンギンさんの おさんぽと、あたまの うえを およぐ トンネル！もぐもぐタイムも おたのしみ。</p><div class="ad">旭山動物園 13:15〜16:30（こどもは むりょう！）</div><div class="lk">▶ 旭山動物園のHP</div></div></a>
-    <a class="kc" href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" target="_blank"><div class="kph"><img src="https://res.cloudinary.com/hrmedia/image/authenticated/s--X2QrHpbN--/OMO7%E6%97%AD%E5%B7%9D_%E3%81%88%E3%81%9E%E3%81%B2%E3%81%90%E3%81%BE%E3%83%AB%E3%83%BC%E3%83%A0%E7%AA%93%E6%AD%A3%E5%AF%BE_%E6%98%BC_eb5h7z.webp" alt="OMO7旭川えぞひぐまルーム" onerror="fb(this,'🐻')"></div>
-      <div class="kbd"><h4>くまさんの おへや</h4><p>よるは パパと こたろうは「えぞひぐまルーム」に おとまり。おへやじゅう くまさんだらけ！</p><div class="ad">OMO7旭川 どうぶつルーム</div><div class="lk">▶ OMO7旭川のHP</div></div></a>
+    <a class="kc" href="https://higashikawa-town.jp/" target="_blank" rel="noopener"><div class="kph"><img src="images/sentopure.jpg" loading="lazy" decoding="async" alt="せんとぴゅあの しばふひろば" onerror="fb(this,'📷')"></div>
+      <div class="kbd"><h4>しゃしんの まちを おさんぽ</h4><p>ひがしかわの かわいい まちで ほんや ざっかを みたり、おやつを たべたり。</p><div class="ad">東川町（せんとぴゅあ・道草館）9:00〜12:00</div><div class="lk">▶ 東川町の ページ</div></div></a>
+    <a class="kc" href="https://www.airdo.jp/" target="_blank" rel="noopener"><div class="kph"><img src="images/airdo.jpg" loading="lazy" decoding="async" alt="AIRDOの ひこうき" onerror="fb(this,'✈️')"></div>
+      <div class="kbd"><h4>ママは ひとあし さきに</h4><p>ひこうきじょうで ママに「いってらっしゃい！」。また 2かごに あえるよ。</p><div class="ad">旭川空港 14:30発（AIRDO84）</div><div class="lk">▶ AIRDOの ページ</div></div></a>
+    <a class="kc" href="https://www.city.asahikawa.hokkaido.jp/asahiyamazoo/" target="_blank" rel="noopener"><div class="kph g4"><img src="images/zoo_penguin.jpg" loading="lazy" decoding="async" alt="あたまの うえを およぐ ペンギン" onerror="fb(this,'🐧')"><img src="images/zoo_bear.jpg" loading="lazy" decoding="async" alt="およぐ ほっきょくぐま" onerror="fb(this,'🐻')"><img src="images/zoo_seal.jpg" loading="lazy" decoding="async" alt="えんとつ水そうの あざらし" onerror="fb(this,'🦭')"><img src="images/zoo_hippo.jpg" loading="lazy" decoding="async" alt="みずあびする カバ" onerror="fb(this,'🦛')"></div>
+      <div class="kbd"><h4>あさひやま どうぶつえん！</h4><p>ペンギンさんが あたまの うえを およぐ トンネル！アザラシの えんとつ水そうも すごいよ。</p><div class="ad">旭山動物園 14:20〜17:00（こどもは むりょう！）</div><div class="lk">▶ どうぶつえんの ページ</div></div></a>
+    <a class="kc" href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" target="_blank" rel="noopener"><div class="kph"><img src="images/omo7.jpg" loading="lazy" decoding="async" alt="OMO7旭川えぞひぐまルーム" onerror="fb(this,'🐻')"></div>
+      <div class="kbd"><h4>くまさんの おへや</h4><p>よるは パパと こたろうは「えぞひぐまルーム」に おとまり。おへやじゅう くまさんだらけ！</p><div class="ad">OMO7旭川 どうぶつルーム</div><div class="lk">▶ OMO7旭川の ページ</div></div></a>
   </div>
 
   <div class="kd">4にちめ（8/19・すいようび）</div>
   <div class="kcards">
-    <a class="kc" href="https://chitose-aq.jp/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Michinoeki_Salmon_Park_Chitose.jpg?width=640" alt="道の駅サーモンパーク千歳" onerror="fb(this,'🐟')"></div>
-      <div class="kbd"><h4>サケの すいぞくかん</h4><p>かわのなかが みえる まどと、てを ツンツンしてくれる ドクターフィッシュ！</p><div class="ad">サケのふるさと千歳水族館 12:30〜14:30</div><div class="lk">▶ 千歳水族館のHP</div></div></a>
-    <a class="kc" href="https://www.hokkaido-airports.com/ja/new-chitose/" target="_blank"><div class="kph"><img src="https://www.hokkaido-airports.com/ja/new-chitose/assets/pages/top/images/mv-welcome-bg-small.jpg" alt="新千歳空港" onerror="fb(this,'🛬')"></div>
-      <div class="kbd"><h4>くうこうで あそぼう</h4><p>おっきな ひこうきを まぢかで みて、ラーメンや ソフトクリームも たべちゃおう。</p><div class="ad">新千歳空港 15:45〜18:40</div><div class="lk">▶ 新千歳空港のHP</div></div></a>
+    <a class="kc" href="https://chitose-aq.jp/" target="_blank" rel="noopener"><div class="kph g4"><img src="images/aq_window.jpg" loading="lazy" decoding="async" alt="ちとせがわの なかが みえる まど" onerror="fb(this,'🐟')"><img src="images/aq_doctor.jpg" loading="lazy" decoding="async" alt="ドクターフィッシュたいけん" onerror="fb(this,'🔍')"><img src="images/aq_touch.jpg" loading="lazy" decoding="async" alt="さわれる タッチプール" onerror="fb(this,'🐟')"><img src="images/aq_tank.jpg" loading="lazy" decoding="async" alt="おおきな すいそう" onerror="fb(this,'🐟')"></div>
+      <div class="kbd"><h4>サケの すいぞくかん</h4><p>かわのなかが みえる まどと、ておを ツンツンしてくれる ドクターフィッシュ！</p><div class="ad">サケのふるさと千歳水族館 12:30〜14:30</div><div class="lk">▶ すいぞくかんの ページ</div></div></a>
+    <a class="kc" href="https://www.new-chitose-airport.jp/ja/" target="_blank" rel="noopener"><div class="kph"><img src="images/chitose_airport.jpg" loading="lazy" decoding="async" alt="新千歳空港" onerror="fb(this,'🛬')"></div>
+      <div class="kbd"><h4>くうこうで あそぼう</h4><p>おっきな ひこうきを まぢかで みて、ラーメンや ソフトクリームも たべちゃおう。</p><div class="ad">新千歳空港 15:45〜18:40</div><div class="lk">▶ 新千歳空港の ページ</div></div></a>
   </div>
 
   <div class="kd">5にちめ（8/20・もくようび）</div>
   <div class="kcards">
-    <a class="kc" href="https://www.skymark.co.jp/" target="_blank"><div class="kph"><img src="https://www.skymark.co.jp/ja/service/images/seatmap_img_02.jpg" alt="スカイマークの飛行機" onerror="fb(this,'🏡')"></div>
-      <div class="kbd"><h4>おうちに かえるよ</h4><p>あさはやく おきて ひこうきへ。おもいで いっぱい、ただいま！</p><div class="ad">9:20 新千歳発 SKY762 → 11:10 セントレア着</div><div class="lk">▶ スカイマークのHP</div></div></a>
+    <div class="kc"><div class="kph"><img src="images/sky_gate.jpg" loading="lazy" decoding="async" alt="スカイマークの ひこうき" onerror="fb(this,'🏡')"></div>
+      <div class="kbd"><h4>おうちに かえるよ</h4><p>あさはやく おきて ひこうきへ。おもいで いっぱい、ただいま！</p><div class="ad">9:20 新千歳発 SKY762 → 11:10 セントレア着</div></div></div>
   </div>
 </section>
 
-<!-- ================= GOHAN ================= -->
-<section id="v-gohan" class="view">
-  <h2 class="section-title">🍽 ごはんプラン</h2>
-  <p class="lead-note">写真をクリックするとお店のページが開きます。</p>
-  <div class="kcards">
-    <a class="kc" href="https://staytuned.asia/ja/brands/minn/hotels/minn-chitose" target="_blank"><div class="kph"><div class="fb">🍳🍞</div></div>
-      <div class="kbd"><h4>8/17（月）あさ｜Minnで手作り朝ごはん</h4><p>キッチン付きのお部屋で朝ごはん。前日にスーパー・コンビニで買い出しを。</p><div class="lk">▶ Minn千歳のHP</div></div></a>
-    <a class="kc" href="https://r.gnavi.co.jp/7ubcgbet0000/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Erimacrus_isenbeckii.jpg?width=640" alt="毛ガニ" onerror="fb(this,'🦀')"></div>
-      <div class="kbd"><h4>8/17（月）よる｜天金でカニ！</h4><p>毛ガニ・海鮮の老舗。掘りごたつ個室で、子ども用に寿司・白飯・天ぷらも。19:00〜／要予約 ☎0166-22-3953</p><div class="lk">▶ 天金のページ（ぐるなび）</div></div></a>
-    <a class="kc" href="https://hoshinoresorts.com/ja/hotels/omo7asahikawa/" target="_blank"><div class="kph"><img src="https://media.hoshinoresorts.com/image/authenticated/s--WoU09sWg--/c_fill,g_auto,h_630,w_1200/f_auto,q_auto/v1732449924/OMO7%E6%97%AD%E5%B7%9D_OMO%E3%83%98%E3%82%99%E3%83%BC%E3%82%B9%E5%85%A8%E6%99%AF_1_wrmcf4.jpg" alt="OMO7旭川" onerror="fb(this,'🥐')"></div>
-      <div class="kbd"><h4>8/18・8/19 あさ｜OMO7の朝食ビュッフェ</h4><p>北海道の朝ごはんをたっぷり。朝食付きプラン予約済みなのでチケット不要。</p><div class="lk">▶ OMO7旭川のHP</div></div></a>
-    <a class="kc" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B7%9D%E3%83%A9%E3%83%BC%E3%83%A1%E3%83%B3" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Baikohken_Ramen.jpg?width=640" alt="旭川ラーメン" onerror="fb(this,'🍜')"></div>
-      <div class="kbd"><h4>8/18（火）よる｜旭川ラーメン</h4><p>動物園帰りに本場の醤油ラーメン。OMO7周辺に名店多数（梅光軒・青葉など）。</p><div class="lk">▶ 地図でお店を探す</div></div></a>
-    <a class="kc" href="https://www.salmonpark.com/" target="_blank"><div class="kph"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Michinoeki_Salmon_Park_Chitose.jpg?width=640" alt="道の駅サーモンパーク千歳" onerror="fb(this,'🐟')"></div>
-      <div class="kbd"><h4>8/19（水）ひる｜道の駅サーモンパークでランチ</h4><p>水族館のとなり。フードコートで千歳バーガーやサーモン丼。駐車場無料。</p><div class="lk">▶ サーモンパークのHP</div></div></a>
-    <a class="kc" href="https://www.hokkaido-airports.com/ja/new-chitose/" target="_blank"><div class="kph"><img src="https://www.hokkaido-airports.com/ja/new-chitose/assets/pages/top/images/mv-welcome-bg-small.jpg" alt="新千歳空港" onerror="fb(this,'🍜')"></div>
-      <div class="kbd"><h4>8/19（水）よる｜新千歳空港で夕食</h4><p>北海道ラーメン道場・市電通り食堂街・回転寿司など選び放題。〆は北海道ソフトクリーム！</p><div class="lk">▶ 新千歳空港のHP（グルメ）</div></div></a>
+<!-- ================= FOOD ================= -->
+<section id="v-food" class="view">
+  <h2 class="section-title">🍽 何食べようか？</h2>
+  <p class="lead-note">まだ決まっていない食事の候補集です。決まっているのはOMO7の朝食（8/18・8/19の朝）だけ。それぞれ4つずつ候補を出したので、家族で相談して決めましょう。</p>
+  <div class="warn">☀️ 朝ごはんメモ：8/17の朝はMinnのキッチンで簡単に（前の夜にコンビニ・スーパーで調達がおすすめ）／8/18・8/19の朝はOMO7の朝食ビュッフェ（予約済み）／8/20の朝は空港で（いちばん下の候補へ）</div>
+  <h2 class="day"><span class="d">8/16（日）よる</span><span class="w">千歳｜19時ごろ・とうちゃく日</span></h2>
+  <p class="day-theme">つかれている日は「ラクに食べる」が正解。こたろうが寝ちゃってもOKなプランも用意</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🛫</div><div class="mb"><h4>新千歳空港で食べてから移動</h4><p>18:45着→そのまま3Fのグルメゾーンへ。回転寿司もラーメンも20時ごろまで営業しているので、食べてから19:40のタクシーが一番スムーズ。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍣</div><div class="mb"><h4>北々亭 千歳店</h4><p>職人が目の前で握る本格派の人気回転寿司。千歳市街にあり、明日以降に回してもOKな地元の実力店。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E3%80%85%E4%BA%AD%20%E5%8D%83%E6%AD%B3%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍔</div><div class="mb"><h4>びっくりドンキー 千歳店</h4><p>深夜まで営業のハンバーグ定番店。お子さまメニューが充実していて、遅い時間に子連れでも気楽。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%B3%E3%81%A3%E3%81%8F%E3%82%8A%E3%83%89%E3%83%B3%E3%82%AD%E3%83%BC%20%E5%8D%83%E6%AD%B3%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🏠</div><div class="mb"><h4>お部屋ごはん</h4><p>空港で空弁・おにぎり・お惣菜を買ってMinnへ。キッチン＆電子レンジ付きのお部屋なので、子どもが力尽きた時の最強プラン。</p></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/17（月）ひる</span><span class="w">当別→砂川｜車内で軽めの昼食の日</span></h2>
+  <p class="day-theme">移動する国道12号エリアは実はスイーツ激戦区。「軽めごはん＋おやつ」作戦で</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🥐</div><div class="mb"><h4>ロイズタウン工場直売店</h4><p>チョコタウン見学のついでに。焼きたてパンとソフトクリームで軽めランチに（人気のパンは売り切れ注意）。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%AD%E3%82%A4%E3%82%BA%E3%82%BF%E3%82%A6%E3%83%B3%E5%B7%A5%E5%A0%B4%E7%9B%B4%E5%A3%B2%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🌭</div><div class="mb"><h4>セイコーマート ホットシェフ</h4><p>北海道コンビニの王様。できたてのカツ丼・おにぎり・フライドチキンは車内ごはんの大正解。ルート上にたくさんある。</p></div></div>
+    <div class="mc"><div class="em">🍦</div><div class="mb"><h4>北菓楼 砂川本店</h4><p>シュークリームとソフトクリームの名店。SHIRO工場から車ですぐなので、工場のあとのおやつ休憩に最高。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%8C%97%E8%8F%93%E6%A5%BC%20%E7%A0%82%E5%B7%9D%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🥧</div><div class="mb"><h4>ナカヤ菓子店</h4><p>砂川名物・焼きたてアップルパイの人気店。地元で愛される「すながわスイーツロード」の代表格。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%8A%E3%82%AB%E3%83%A4%E8%8F%93%E5%AD%90%E5%BA%97%20%E7%A0%82%E5%B7%9D" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/17（月）よる</span><span class="w">旭川｜OMO7周辺</span></h2>
+  <p class="day-theme">3世代で行きやすい「個室・お座敷・回転寿司」を中心にセレクト</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🦀</div><div class="mb"><h4>居酒屋 天金 <span class="badge tbd">要予約</span></h4><p>毛ガニと掘りごたつ個室の老舗。お寿司や天ぷらもあって子連れでも安心。OMO7から徒歩7〜8分。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B1%85%E9%85%92%E5%B1%8B%E5%A4%A9%E9%87%91%20%E6%97%AD%E5%B7%9D" target="_blank" rel="noopener">地図</a> <span class="tel">0166-22-3953</span></div></div></div>
+    <div class="mc"><div class="em">🐟</div><div class="mb"><h4>お座敷居酒屋 大舟 <span class="badge tbd">要予約</span></h4><p>創業40年、道産魚介一筋の海鮮居酒屋。お座敷個室があるので2歳連れでもゆったり。旭川駅から徒歩9分。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%8A%E5%BA%A7%E6%95%B7%E5%B1%85%E9%85%92%E5%B1%8B%20%E5%A4%A7%E8%88%9F%20%E6%97%AD%E5%B7%9D" target="_blank" rel="noopener">地図</a> <span class="tel">0166-22-2295</span></div></div></div>
+    <div class="mc"><div class="em">🍣</div><div class="mb"><h4>回転寿しトリトン 旭神店</h4><p>北海道の回転寿司でトップクラスの人気店。予約不可で夕方は大行列になるので、17時台に車で直行（約10分）が吉。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9B%9E%E8%BB%A2%E5%AF%BF%E3%81%97%E3%83%88%E3%83%AA%E3%83%88%E3%83%B3%20%E6%97%AD%E7%A5%9E%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍖</div><div class="mb"><h4>成吉思汗 大黒屋</h4><p>行列のできるジンギスカンの超人気店。煙とにぎやかさはあるので、おばあちゃんと相談して元気があればチャレンジ！</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%88%90%E5%90%89%E6%80%9D%E6%B1%97%E5%A4%A7%E9%BB%92%E5%B1%8B%20%E6%97%AD%E5%B7%9D" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/18（火）ひる</span><span class="w">東川→旭川空港｜お見送りの前に</span></h2>
+  <p class="day-theme">ママのお見送り（14:30発）から逆算して、サッと食べられるところを</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🍽</div><div class="mb"><h4>旭川空港内で昼食</h4><p>ターミナル内のレストラン・売店で空港ごはん。お見送り前にみんなで一緒に食べるなら、ここが一番確実。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B7%9D%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🥛</div><div class="mb"><h4>MILK STAND esperio（空港2F）</h4><p>北海道牛乳のソフトクリームやドリンクのテイクアウト店。軽く済ませたいときのデザート担当。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B7%9D%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>そば処 蓬（よもぎ）</h4><p>空港から車で約13分の手打ちそば人気店。おばあちゃん満足度が高いお店。時間に余裕があれば。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%95%8E%E9%BA%A6%20%E8%93%AC%20%E6%9D%B1%E7%A5%9E%E6%A5%BD" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🐧</div><div class="mb"><h4>旭山動物園の中で食べる</h4><p>お見送りのあと入園して、園内の食堂・売店でザンギやラーメン。子どもたちはこれが一番うれしいかも。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%97%AD%E5%B1%B1%E5%8B%95%E7%89%A9%E5%9C%92" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/18（火）よる</span><span class="w">旭川｜ラーメンの夜</span></h2>
+  <p class="day-theme">OMO7から歩けるエリアに名店ぞろい。動物園帰りに気楽に一杯</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>梅光軒 本店</h4><p>旭川ラーメン大賞受賞の代表格。豚骨×魚介のWスープ醤油。買物公園エリアでアクセスも良し。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%A2%85%E5%85%89%E8%BB%92%20%E6%9C%AC%E5%BA%97%20%E6%97%AD%E5%B7%9D" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>らぅめん青葉 本店</h4><p>1947年創業、旭川ラーメンの元祖ダブルスープ。駅前で行きやすい老舗。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%89%E3%81%85%E3%82%81%E3%82%93%E9%9D%92%E8%91%89%20%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>らーめん山頭火 本店</h4><p>まろやかな塩とんこつで、子どもにも食べやすい味。全国区になった名店の本店はここ旭川。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%82%89%E3%83%BC%E3%82%81%E3%82%93%E5%B1%B1%E9%A0%AD%E7%81%AB%20%E6%97%AD%E5%B7%9D%E6%9C%AC%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>蜂屋 五条創業店</h4><p>焦がしラードの真っ黒スープが名物の老舗。レトロな「5・7小路ふらりーと」内。夜は早じまい（〜19:50）に注意。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%9C%82%E5%B1%8B%20%E4%BA%94%E6%9D%A1%E5%89%B5%E6%A5%AD%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/19（水）ひる</span><span class="w">道の駅サーモンパーク千歳</span></h2>
+  <p class="day-theme">フードコートで好きなものをそれぞれ（水族館はおとなり）</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🍗</div><div class="mb"><h4>TAMAGOYA 親子丼とざんぎ</h4><p>ふわとろ親子丼と北海道ザンギ。子どもチームの本命はこちら。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E5%8D%83%E6%AD%B3" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍚</div><div class="mb"><h4>海鮮丼屋 とと丸食堂</h4><p>どーんと盛られた海鮮丼。おとなチームはこちらでどうぞ。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E5%8D%83%E6%AD%B3" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍜</div><div class="mb"><h4>ふるさとラーメン食堂 ちとせがわ</h4><p>迷ったらラーメン。家族で取り分けやすい定番メニュー。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E5%8D%83%E6%AD%B3" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍓</div><div class="mb"><h4>ベーカリー空とメロン ＆ いちごスイーツ</h4><p>焼きたてパンと「いちごBonBonBERRY」のスイーツ。食後のデザートと翌朝のパン調達にも。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E9%81%93%E3%81%AE%E9%A7%85%E3%82%B5%E3%83%BC%E3%83%A2%E3%83%B3%E3%83%91%E3%83%BC%E3%82%AF%E5%8D%83%E6%AD%B3" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/19（水）よる</span><span class="w">新千歳空港｜18:00〜18:40の勝負メシ</span></h2>
+  <p class="day-theme">レンタカー返却（19:00）から逆算。3Fのグルメゾーンに集合</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🍣</div><div class="mb"><h4>グルメ回転ずし 函太郎</h4><p>空港3Fの人気回転寿司（L.O.20:00）。行列ができるので18時前の入店がおすすめ。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%87%BD%E5%A4%AA%E9%83%8E%20%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF%E5%BA%97" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🦐</div><div class="mb"><h4>えびそば一幻</h4><p>「北海道ラーメン道場」の行列筆頭。えびの香りの濃厚スープは並ぶ価値あり。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%88%E3%81%B3%E3%81%9D%E3%81%B0%E4%B8%80%E5%B9%BB%20%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍽</div><div class="mb"><h4>エアポートレストラン by ROYAL HOST</h4><p>ゆっくり座れるファミリーレストラン。疲れた2歳がいても安定・確実なプラン。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF%20%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍲</div><div class="mb"><h4>一灯庵（そば）</h4><p>打ちたてそばの落ち着いたお店（3F）。旅の締めに、おばあちゃんとしっぽり。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E4%B8%80%E7%81%AF%E5%BA%B5%20%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+  </div>
+  <h2 class="day"><span class="d">8/20（木）あさ</span><span class="w">新千歳空港｜7:00すぎ・9:20発</span></h2>
+  <p class="day-theme">朝7時から開いているお店は意外とある。時間が読めない朝は「買って待合で」も保険に</p>
+  <div class="meal-cards">
+    <div class="mc"><div class="em">🍙</div><div class="mb"><h4>朝市食堂（1F）</h4><p>朝7:00から営業。注文してから握ってくれるおにぎりと海鮮の朝ごはん。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%9C%9D%E5%B8%82%E9%A3%9F%E5%A0%82%20%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍳</div><div class="mb"><h4>エアポートレストラン by ROYAL HOST</h4><p>7:20からモーニング営業。子連れで一番ゆっくり座って食べられる。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF%20%E3%83%AD%E3%82%A4%E3%83%A4%E3%83%AB%E3%83%9B%E3%82%B9%E3%83%88" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🍣</div><div class="mb"><h4>北の味覚 すず花 ゲート店</h4><p>保安検査を通ったあとのエリアで朝7:00から。搭乗直前まで粘れるのが強い。</p><div class="mf"><a class="map" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%81%99%E3%81%9A%E8%8A%B1%20%E6%96%B0%E5%8D%83%E6%AD%B3%E7%A9%BA%E6%B8%AF" target="_blank" rel="noopener">地図</a></div></div></div>
+    <div class="mc"><div class="em">🥪</div><div class="mb"><h4>空弁・パンをテイクアウト</h4><p>佐藤水産のおにぎりや空弁を買って搭乗待合で。搭乗までの時間が読めない朝の保険プラン。</p></div></div>
   </div>
 </section>
 
 <!-- ================= ITEMS ================= -->
 <section id="v-items" class="view">
   <h2 class="section-title">🎒 持ち物リスト</h2>
-  <p class="lead-note">タップでチェックできます（ページを閉じるとリセットされます）</p>
+  <p class="lead-note">タップでチェックできます（この端末に保存されるので、閉じても消えません）</p>
   <div class="grid2">
     <div class="card">
       <h3>👨‍👩‍👧‍👦 みんなの持ち物</h3>
@@ -410,7 +510,8 @@
         <li>Minn千歳 <span class="tel">050-3642-4934</span></li>
         <li>OMO7旭川 <span class="tel">050-3134-8095</span>（9:30〜18:00）</li>
         <li>川村カ子トアイヌ記念館 <span class="tel">0166-51-2461</span></li>
-        <li>居酒屋 天金 <span class="tel">0166-22-3953</span></li>
+        <li>居酒屋 天金 <span class="tel">0166-22-3953</span>（夕食候補）</li>
+        <li>海鮮居酒屋 大舟 <span class="tel">0166-22-2295</span>（夕食候補）</li>
         <li>旭山動物園 <span class="tel">0166-36-1104</span></li>
         <li>千歳水族館 <span class="tel">0123-42-3001</span></li>
       </ul>
@@ -430,15 +531,16 @@
 
 <footer>
   北海道家族旅行のしおり（共有版）｜2026.8.16–20｜最終更新 2026.7.26<br>
-  写真：各施設公式サイト（ロイズ／SHIRO／星野リゾート／Minn／スカイマーク／HOKKAIDO LOVE!／北海道エアポート）および Wikimedia Commons（CCライセンス）より<br>
+  写真は各施設・各社の公式サイトより（ロイズ／SHIRO／旭山動物園／星野リゾート／Minn／スカイマーク／AIRDO／日産／東川町／HOKKAIDO LOVE!／北海道エアポート）<br>
   時刻・料金は2026年7月時点。おでかけ前に公式サイトで最終確認を。
 </footer>
 
 <script>
-function showView(v){
+function showView(v,fromHash){
   document.querySelectorAll('.view').forEach(function(s){s.classList.remove('on');});
   document.getElementById('v-'+v).classList.add('on');
   document.querySelectorAll('.tabs button').forEach(function(b){b.classList.toggle('on', b.dataset.v===v);});
+  if(!fromHash){try{history.replaceState(null,'','#'+v);}catch(e){}}
   window.scrollTo({top:0});
 }
 document.querySelectorAll('.tabs button').forEach(function(b){
@@ -457,9 +559,37 @@ function fb(img, emoji){
   d.textContent=emoji;
   img.replaceWith(d);
 }
+// チェックリストは端末に保存（閉じても消えない）
+function ckKey(li){return 'shiori:'+li.textContent.trim().slice(0,40);}
 document.querySelectorAll('.checklist li').forEach(function(li){
-  li.addEventListener('click',function(){li.classList.toggle('done');});
+  try{if(localStorage.getItem(ckKey(li))==='1'){li.classList.add('done');}}catch(e){}
+  li.addEventListener('click',function(){
+    li.classList.toggle('done');
+    try{localStorage.setItem(ckKey(li), li.classList.contains('done')?'1':'0');}catch(e){}
+  });
 });
+
+// 出発までのカウントダウン
+(function(){
+  var el=document.getElementById('cd-num'), lb=document.getElementById('cd-label');
+  if(!el) return;
+  var start=new Date(2026,7,16), end=new Date(2026,7,20);
+  var now=new Date(); now=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  var d=Math.round((start-now)/86400000);
+  if(d>0){el.textContent='あと '+d+' 日';lb.textContent='ほっかいどうまで';}
+  else if(now<=end){
+    var n=Math.round((now-start)/86400000)+1;
+    el.textContent=n+'日め';lb.textContent='ほっかいどう たびの とちゅう！';
+  }else{el.textContent='ありがとう';lb.textContent='たのしい たびでした！';}
+})();
+
+// タブをURLに残す（#food などで直接ひらける・LINEで共有しやすい）
+function tabFromHash(){
+  var v=(location.hash||'').replace('#','');
+  if(v && document.getElementById('v-'+v)){showView(v,true);}
+}
+window.addEventListener('hashchange',tabFromHash);
+tabFromHash();
 </script>
 </body>
 </html>
