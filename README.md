@@ -41,5 +41,7 @@
 
 | かばと製麺所 | 蝦夷前うどん かばと製麺所 - Panoramio 78358693.jpg | Panoramio投稿者 | CC BY-SA 3.0 |
 | 高橋製菓 | 高橋製菓製のビタミンカステーラ.JPG | （CC0のため表記不要） | CC0 |
+| 道の駅ひがしかわ道草館 | Michinoeki Higashikawa 「Michikusakan」 Appearance.jpg | Commons投稿者 | CC BY-SA 4.0 |
+| 砂川ハイウェイオアシス | Sunagawa Service Area Kudari Highway Oasis 20190628.jpg | Commons投稿者 | CC BY-SA 3.0 |
 
 ※びっくりドンキーの料理写真は他店舗で撮影されたチェーン共通メニューです。
